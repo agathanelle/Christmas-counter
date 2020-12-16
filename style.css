@@ -1,0 +1,67 @@
+body
+{
+    text-align: center;
+    padding-top:10%;
+    background: url(holly.png);
+    background-color: rgb(123, 153, 128);
+    background-repeat:repeat;
+    background-size: 10%;
+    animation-timing-function: linear;
+    animation: holly 500s infinite;
+}
+body section
+{
+    text-align:inherit;
+    border-radius: 3px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 5px solid rgba(5, 71, 5, 0.9);
+    background-color: rgba(197, 197, 197, 0.85);
+}
+h1
+{
+    color: rgb(0, 65, 9);
+    font-size: 30px;
+}
+p
+{
+    font-weight: bolder;
+    font-size: 25px;
+    color: rgb(206, 0, 0);
+}
+input[type=text]
+{
+    display: inline-block;
+    border-radius: 5px;
+    border: 2px solid rgb(7, 87, 18);
+    padding: 10px 20px;
+    background-color: rgb(233, 231, 231);
+}
+input[type=button]
+{
+    background-color: rgb(233, 231, 231);
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 2px solid rgb(7, 87, 18);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color:  rgb(206, 0, 0);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+@keyframes holly
+{
+    0% {
+        background-position: 0px 0px;
+      }
+      100% {
+        background-position: 10000px 10000px;
+      }
+}
+@media (max-width:800px)
+{
+    body{
+        background-size: 25%;
+    }
+}
