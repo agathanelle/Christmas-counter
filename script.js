@@ -11,11 +11,9 @@ function checkYear()
     nowDay = today.getDate();
 
     if(nowMonth==11 && nowDay>24) Christmas = new Date(nowYear+1,11,25,0,0,0,0);
-    else Christmas = new Date(nowYear,11,25,0,0,0,0);
-
-    if(nowMonth==11 && nowDay == 25) $(tag).text("Today is Christmas!");
     if(nowMonth==11 && nowDay == 24) $(tag).text("Today is Christmas Eve!");
-    
+    if(nowMonth==11 && nowDay == 25) $(tag).text("Today is Christmas!");
+    else Christmas = new Date(nowYear,11,25,0,0,0,0);
 }
 
 function changeTodaysDay()
